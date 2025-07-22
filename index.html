@@ -25,30 +25,153 @@
     Para comentar una sección de la página con el teclado se utiliza la combinación de Alt + Shift + A <br>
     Los comentarios sirven para entender la estructura que se está trabajando en la página y el usuario no los ve
     </p>
-
     <hr>
+
+    <!-- Estilo al texto de los párrafos desde html -->
     <p>Ahora se van a probar tres etiquetas para editar texto en HTML: <br>
         La etiqueta strong, <strong>que coloca en negrilla el texto que esté dentro de ella.</strong><br>
         La etiqueta em, <em>la cual coloca todo el texto que esté dentro de ella en cursiva.</em> <br>
         Y la etiqueta span, la cual ayuda a seleccionar <span style="color: red;">cierta parte en un texto</span> para editar solo esa parte (se usó un poco de CSS para mostrar mejor esta etiqueta). </p>
-    <p>Otra etiqueta a usar es la etiqueta <strong>a href=""</strong> que nos ayuda a insertar hipervínculos.<br>
-        Por ejemplo, el siguiente texto está entre la etiqueta <strong>a href="":</strong><br> 
-        <a href="https://www.google.com/">Ir a Google.</a> <br>
-        Y en las comillas de href se coloca el enlace de destino. <br>
-        Para hacer que el navegador abra el enlace en una nueva pestaña se debe añadir <strong>target="_blank" </strong>a la etiqueta, quedando: <strong>a target="_blank" href="https://www.google.com/"</strong> <br>
-        <a target="_blank" href="https://www.google.com/">Ir a Google.</a></p>
     <hr>
+
+    <!-- Enlaces a otras páginas-->
+    <h3>Hiperbinculos</h3>
+    <p>Otra etiqueta a usar es la etiqueta <strong>a href=""</strong> que nos ayuda a insertar hipervínculos.<br>
+        Por ejemplo, el siguiente texto está entre la etiqueta <strong>a href="":</strong></p> 
+    <a href="https://www.google.com/">Ir a Google.</a> 
+    <p>Y en las comillas de href se coloca el enlace de destino. <br>
+    Para hacer que el navegador abra el enlace en una nueva pestaña se debe añadir <strong>target="_blank" </strong>a la etiqueta, quedando: <strong>a target="_blank" href="https://www.google.com/"</strong> <br> </p>
+    <a target="_blank" href="https://www.google.com/">Ir a Google.</a>
+    <hr>
+
+    <!-- Insertando imagenes-->
+    <h3>Imagenes</h3>
     <p>En esta parte se hará uso de la etiqueta <strong><em>img src="" alt=""</em></strong> la cual permite colocar imágenes en una página web donde: <br>
         En <strong>src</strong> va el enlace o la ubicación de la imagen. <br>
         Y en <strong>alt</strong> irá un texto que aparecerá en dado caso la imagen no cargue. <br>
-        Cabe decir que la etiqueta img soporta varios formatos de archivos tipo imagen como: JPEG, PNG y GIF.
-     </p>
-    <p>Imagen sacada de internet:</p>
+        Cabe decir que la etiqueta img soporta varios formatos de archivos tipo imagen como: JPEG, PNG y GIF.</p>
+    
+    <h3>Imagen sacada de internet:</h3>
     <img src="https://assets-v2.lottiefiles.com/a/e88e947e-117e-11ee-b32b-1f49352a17f5/s1A5Yx3U5y.gif" alt="Texto alternativo">
     
-    <p>Imagen de la carpeta de la página:</p>
+    <h3>Imagen que no carga:</h3>
     <img src="" alt="texto alternativo">
 
+    <h3>Imagen desde el ordenador:</h3>
+    <img src="Imagenes/Captura.PNG" alt="texto alternativo">
+    <hr>
+
+    <!-- Tipos de Listas-->
+    <h3>Listas</h3>
+    <p>En este núevo apartado se añadiran listas ordenadas y no ordenadas</p>
+            <!-- Lista no ordenada -->
+    <h3>Listas no ordenadas</h3>
+    <p>Para crear una lista <strong>no ordenada</strong> se debe utilizar la etiqueta <strong>ul</strong> y dentro de ella cada elemento que contenga se designa con la etiqueta <strong>li</strong></p>
+    <ul>
+        <li>Esté seria el primer elemento de la lista no ordenada</li>
+        <li>Este seria el segundo elemento</li>
+        <li>Este el tercero</li>
+        <li>Y así sucesivamente</li>
+    </ul>
+    <p>Una caracteristica de estas listas es que con un poco de CSS se puede cambiar el tipo de viñeta a usar, en este caso dentro de htl y en la etiqueta ul usando: <strong>style="list-style-type: circle;"</strong></p>
+            <!-- Cambio tipo de viñeta -->
+    <ul style="list-style-type: circle;">
+        <li>Esté seria el primer elemento de la lista no ordenada</li>
+        <li>Este seria el segundo elemento</li>
+        <li>Este el tercero</li>
+        <li>Y así sucesivamente</li>
+    </ul>
+    <hr>
+            <!-- Lista ordenada -->
+    <h3>Lista ordenada</h3>
+    <p>Para crear una lista  ordenada se usa la etiqueta ol e igual que en las listas no ordenadas, cada elemento que contenga se designa con la etiqueta li</p>
+    <ol>
+        <li>Primer elemento de la lista ordenada</li>
+        <li>Segundo elemento de la lista ordenada</li>
+        <li>Y así sucesivamente</li>
+    </ol>
+
+    <p>En las <strong>listas ordenadas</strong> se puede indicar en que número va a iniciar el elemento, por ejemplo: <br>
+    Una lista que inicie en el número 25, esto colocando en el elemento (li) a modificar lo siguiente:<strong>li value="25"</strong></p>
+    <ol>
+        <li value="25">Elemento 25 de la lista</li>
+        <li>Siguiente elemento</li>
+        <li>Siguiente elemento</li>
+        <li>Siguiente elemento</li>
+        <li><strong>Y se puede volver a modificar:</strong></li>
+        <li value="50"><strong>Elemento número 50 de la lista</strong></li>
+    </ol>
+    <p>Y al igual que en las listas no ordenadas, se puede cambiar el estilo de la viñeta o en este caso el estilo de enumeración</p>
+
+    <ol style="list-style-type: upper-alpha;">
+        <li >Primer elemento de la lista ordenada</li>
+        <li>Segundo elemento de la lista ordenada</li>
+        <li>Tercer elemento de la lista ordenada</li>
+        <li>Y así sucesibamente</li>
+    </ol>
+
+    <ol style="list-style-type: lower-roman;">
+        <li >Primer elemento de la lista ordenada</li>
+        <li>Segundo elemento de la lista ordenada</li>
+        <li>Tercer elemento de la lista ordenada</li>
+        <li>Y así sucesibamente</li>
+    </ol>
+            <!-- Diferecnias entre listas -->
+    <p>Entonces se observa cual es la <strong>diferencia</strong> entre una <strong>lista ordenada y una no ordenada</strong>, en las listas ordenadas los elementos se enumeran, <br>
+    Y en la lista no ordenada los elementos aparecen con viñetas, en ambos casos se puede variar el formato en que se mentra o la enumeración o las viñetas, segun corresponda. <br></p>
+    <hr>
+            <!-- Otros usos -->
+    <p>Otros foratos de las listas es que se puede agregar una lista dentro de otra:</p>
+    <ol>
+        <li>Primer elemento</li>
+        <li>Segundo elemento</li>
+        <li>Tercer elemento</li>
+        <li>Cuarto elemento
+            <ol>
+                <li>Primer sub elemento</li>
+                <li>Segundo sub elemento
+                        <ul>
+                            <li>lista 3</li>
+                            <ul>
+                                <li>Lista 4</li>
+                            </ul>
+                        </ul>
+                </li>
+            </ol>
+        </li>
+    </ol>
+    <hr>
+    <p>Se pueden usar tambien usar las etiquetas de strong y em</p>
+    <ul>
+        <li><strong>Nombre:</strong> <em>Paula R.</em></li>
+        <li><strong>Fecha:</strong> Paula R.</li>
+        <li><strong>Lugar:</strong> Paula R.</li>
+    </ul>
+    <hr>
+            <!-- Orden de los elementos de una lista -->
+    <p>En las listas ordenadas se pueden enumerar los elementos de mayor a menor </p>
+    <ol reversed="reversed">
+        <li>Primer elemento</li>
+        <li>Segundo elemento</li>
+        <li>Tercer elemento</li>
+        <li>Cuarto elemento
+    </ol>
+    <hr>
+            <!-- Listas con descripción -->
+    <h3>Lista con descripción</h3>
+    <p>Otro tipo de listas, son las <strong><em>listas con descripción</em></strong>, normalmente usada en glosarios, para crear este tipo de listas se usa la etiqueta <strong>dl</strong>, cada elemento de la lista debe estar dentro de la etiqueta <strong>dt</strong>, y la descripción del elemento debe estar en <strong>dd</strong></p>
+    <dl>
+        <dt>Concepto dentro de la etiqueta <strong>dt</strong></dt>
+        <dd>Descripción del concepto dentro de la etiqueta <strong>dd</strong></dd>
+        <dd>Otra descripción del concepto dentro de otra etiqueta <strong>dd</strong></dd>
+    <dt>HTML</dt>
+        <dd>HyperText Markup Language, lenguaje de marcado para la creación de páginas web.</dd>
+    <dt>CSS</dt>
+        <dd>Cascading Style Sheets, lenguaje utilizado para describir la presentación de un documento HTML.</dd>
+    <dt>JavaScript</dt>
+        <dd>Lenguaje de programación que se utiliza para crear interactividad en las páginas web.</dd>
+
+    </dl>
 
 
 </body>
