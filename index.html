@@ -63,9 +63,9 @@
 
     <!-- Tipos de Listas-->
     <h3>Listas</h3>
-    <p>En este nuevo apartado se añadirán listas ordenadas y no ordenadas</p>
+    <p>En este nuevo apartado se añadirán listas ordenadas, no ordenadas y con descripción.</p>
             <!-- Lista no ordenada -->
-    <h3>Listas no ordenadas</h3>
+    <h4>Listas no ordenadas</h4>
     <p>Para crear una lista <strong>no ordenada</strong> se debe utilizar la etiqueta <strong>ul</strong> y dentro de ella cada elemento que contenga se designa con la etiqueta <strong>li</strong></p>
     <ul>
         <li>Esté sería el primer elemento de la lista no ordenada</li>
@@ -83,7 +83,7 @@
     </ul>
     <hr>
             <!-- Lista ordenada -->
-    <h3>Lista ordenada</h3>
+    <h4>Lista ordenada</h4>
     <p>Para crear una lista ordenada se usa la etiqueta ol e igual que en las listas no ordenadas, cada elemento que contenga se designa con la etiqueta li</p>
     <ol>
         <li>Primer elemento de la lista ordenada</li>
@@ -158,7 +158,7 @@
     </ol>
     <hr>
             <!-- Listas con descripción -->
-    <h3>Lista con descripción</h3>
+    <h4>Lista con descripción</h4>
     <p>Otro tipo de listas, son las <strong><em>listas con descripción</em></strong>, normalmente usada en glosarios, para crear este tipo de listas se usa la etiqueta <strong>dl</strong>, cada elemento de la lista debe estar dentro de la etiqueta <strong>dt</strong>, y la descripción del elemento debe estar en <strong>dd</strong></p>
     <dl>
         <dt>Concepto dentro de la etiqueta <strong>dt</strong></dt>
@@ -170,9 +170,137 @@
         <dd>Cascading Style Sheets, lenguaje utilizado para describir la presentación de un documento HTML.</dd>
     <dt>JavaScript</dt>
         <dd>Lenguaje de programación que se utiliza para crear interactividad en las páginas web.</dd>
-
     </dl>
+    <hr>
 
+    
+    <!-- Insertando Tablas -->
+     <h3>Tablas</h3>
+    <p>En este espacio se introduce el tema de tablas en html, indicando que etiquetas se deben utilizar para crearlas y añadir filas y columnas. </p>
+    <ul>
+        <li>Para empezar a crear una tabla se utiliza la etiqueta <strong>table</strong>. </li>
+        <li>Para definir la primera fila se utiliza la etiqueta <strong>tr</strong>.</li>
+        <li>Dentro de esta <strong>primera etiqueta tr</strong> se usa un <strong>th</strong> por cada columna de la tabla. En este caso <strong>th</strong> es para indicar también que esa fila va a ser <strong>la cabecera de la tabla, </strong>el contenido va a aparecer centrado y en negrilla</li>
+        <li>Para las columnas de las siguientes filas, que serán el contenido de la tabla, se usa <strong>td.</strong></li>
+    </ul>
+    <p>Para que la tabla quede organizada se deben tener la misma cantidad de etiquetas th y td en cada tr, para que no sobren o falten columnas como se ve a continuación</p>
+         
+                <!-- tabla 1 -->
+    <h4>Tabla 1</h4>
+    <table> 
+        <tr>
+            <th>Cabecera</th>
+            <th>De La</th>
+            <th>Tabla</th>
+            <th>Con th</th>
+        </tr>
+        <tr>
+            <td>Contenido 1</td>
+            <td>Contenido 2</td>
+            <td>Contenido 3</td>
+            <td>Contenido 4</td>
+            <td>Contenido 5 con td</td>
+        </tr>
+        <tr>
+            <td>Nueva fila contenido 6</td>
+            <td>Nueva fila contenido 7</td>
+            <td>Nueva fila contenido 8</td>
+        </tr>
+    </table>
+    <br>
+    <p>Para poder dar una margen a la tabla se usa un poco de CSS, con el comando: <strong>table style="border: 1px solid black;"</strong>, el cual define el grosor del borde, el estilo, y el color</p>
+    
+                <!-- tabla con borde -->
+    <h4>Tabla con borde</h4>
+    <table style="border: 1px solid black;"> 
+        <tr>
+            <th>Cabecera</th>
+            <th>De La</th>
+            <th>Tabla</th>
+            <th>Con th</th>
+        </tr>
+        <tr>
+            <td>Contenido 1</td>
+            <td>Contenido 2</td>
+            <td>Contenido 3</td>
+            <td>Contenido 4</td>
+            <td>Contenido 5 con td</td>
+        </tr>
+        <tr>
+            <td>Nueva fila contenido 6</td>
+            <td>Nueva fila contenido 7</td>
+            <td>Nueva fila contenido 8</td>
+        </tr>
+    </table>
+    <br>
+    <p>Este comando se puede colocar en cada etiqueta <strong>th o td</strong>, aunque con CSS se puede distribuir mejor, para no repetir tanto código</p>
+    <p>Para agrupar de mejor manera el contenido de la tabla se utilizan etiquetas como thead para la cabecera, tbody para el cuerpo o contenido de la tabla y tfoot para el pie de la tabla</p>
+    
+                <!-- tabla con delineado y división de etiquetas-->
+    <h4>Tabla con etiquetas de división</h4>
+    <table style="border: 1px solid black;"> 
+        <thead>
+            <tr>
+                <th style="border: 1px solid black;">Cabecera</th>
+                <th style="border: 1px solid black;">De La</th>
+                <th style="border: 1px solid black;">Tabla</th>
+                <th style="border: 1px solid black;">Con th</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td style="border: 1px solid black;">Contenido 1</td>
+                <td style="border: 1px solid black;">Contenido 2</td>
+                <td style="border: 1px solid black;">Contenido 3</td>
+                <td style="border: 1px solid black;">Contenido 4</td>
+                <td style="border: 1px solid black;">Contenido 5 con td</td>
+            </tr>
+            <tr>
+                <td style="border: 1px solid black;">Nueva fila contenido 6</td>
+                <td style="border: 1px solid black;">Nueva fila contenido 7</td>
+                <td style="border: 1px solid black;">Nueva fila contenido 8</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <td style="border: 1px solid black;"></td>
+            <td style="border: 1px solid black;"></td>
+            <td style="border: 1px solid black;"></td>
+            <td style="border: 1px solid black;">Total:</td>
+        </tfoot>
+    </table>
 
+    <p>Una tabla ordenada en html seria:</p>
+                <!-- tabla final-->
+    <h4>Tabla ordenada</h4>
+    <table style="border: 1px solid black;"> 
+        <thead>
+            <tr>
+                <th style="border: 1px solid black;">Cabecera</th>
+                <th style="border: 1px solid black;">De La</th>
+                <th style="border: 1px solid black;">Tabla</th>
+                <th style="border: 1px solid black;">Con th</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td style="border: 1px solid black;">Contenido 1</td>
+                <td style="border: 1px solid black;">Contenido 2</td>
+                <td style="border: 1px solid black;">Contenido 3</td>
+                <td style="border: 1px solid black;">Contenido 4</td>
+            </tr>
+            <tr>
+                <td style="border: 1px solid black;">Nueva fila contenido 5</td>
+                <td style="border: 1px solid black;">Nueva fila contenido 6</td>
+                <td style="border: 1px solid black;">Nueva fila contenido 7</td>
+                <td style="border: 1px solid black;">Nueva fila contenido 8</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <td style="border: 1px solid black;"></td>
+            <td style="border: 1px solid black;"></td>
+            <td style="border: 1px solid black;"></td>
+            <td style="border: 1px solid black;">Total:</td>
+        </tfoot>
+    </table>
 </body>
 </html>
